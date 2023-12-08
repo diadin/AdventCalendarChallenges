@@ -27,7 +27,7 @@ public class Calibration {
 		int value = 0;
 		for (int i=0; i< words.length; i++) {
 			indexes[i] = newString.indexOf(words[i]);//returns -1 if not found
-			if (indexes[i] >=0){
+			if (indexes[i] >= 0){
 			   minimIndex= Math.min(minimIndex, indexes[i]);
 			   if (minimIndex == indexes[i])
 			           value = i;
@@ -81,7 +81,7 @@ public class Calibration {
 		System.out.println("-- First day, part 2 --");
 		System.out.println(getCalibration("src/adventDay1/sample2.txt",/*method */"2"));
 		System.out.println(getCalibration("src/adventDay1/input.txt",/*method */"2"));
-
+	//	System.out.println(getCalibration("src/adventDay1/sample2.txt",/*method */"2"));
 	}
 
 }
